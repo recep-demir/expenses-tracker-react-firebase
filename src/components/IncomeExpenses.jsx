@@ -8,6 +8,10 @@ const IncomeExpenses = () => {
   .filter(item => item.amount>0)
   .reduce((acc,item)=>(acc += item.amount),0).toFixed(2)
 
+  const expense = transactions
+  .filter(item => item.amount<0)
+  .reduce((acc,item)=>(acc += item.amount),0).toFixed(2)
+
 
   return (
     <div className="inc-exp-container">
@@ -20,7 +24,7 @@ const IncomeExpenses = () => {
   <div>
     <h4>Expense</h4>
     <p id="money-minus" className="money minus">
-      -$0.00
+      {expense}
     </p>
   </div>
 </div>
