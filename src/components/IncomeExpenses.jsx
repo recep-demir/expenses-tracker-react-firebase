@@ -14,7 +14,7 @@ const IncomeExpenses = () => {
   <div>
     <h4>Income</h4>
     <p id="money-plus" className="money plus">
-      +$0.00
+      {income}
     </p>
   </div>
   <div>
