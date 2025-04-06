@@ -100,12 +100,6 @@ This will enable users to track their expenses across devices securely.
 
 ---
 
-## 📸 Screenshots
-
-_Add screenshots of your application here._
-
----
-
 ## 📄 License
 
 This project is licensed under the MIT License.
