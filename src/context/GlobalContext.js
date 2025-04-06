@@ -16,8 +16,7 @@ useEffect(() => {
 }, [transactions]);
 
 const addTransaction = (transaction) => {
-  transactions.some(item => item.id === transaction.id)
-    ? null
+  transactions.some(item => item.id === transaction.id)     ? null
     : (setTransactions([transaction, ...transactions]), toastSuccess("Transaction added"));
 };
 
