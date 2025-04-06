@@ -16,13 +16,15 @@ useEffect(() => {
 }, [transactions]);
 
 const addTransaction = (transaction) => {
-  transactions.some(item => item.id === transaction.id)     ? null
-    : (setTransactions([transaction, ...transactions]), toastSuccess("Transaction added"));
+  if (!transactions.some(item => item.id === transaction.id)) {
+    setTransactions([transaction, ...transactions]);
+    toastSuccess("Transaction added");
+  }
 };
 
 const deleteTransaction = (id) =>{
   setTransactions(transactions.filter (item =>item.id !== id));
-  toastSuccess("Transaction added");
+  toastSuccess("Transaction deleted");
 }
 
   return (
