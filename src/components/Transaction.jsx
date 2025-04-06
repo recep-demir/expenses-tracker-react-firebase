@@ -2,7 +2,9 @@ import React from 'react'
 
 const Transaction = () => {
   return (
-    <div>Transaction</div>
+    <li className="minus">
+          {transaction.text} <span>-$400</span><button className="delete-btn">x</button>
+        </li>
   )
 }
 
