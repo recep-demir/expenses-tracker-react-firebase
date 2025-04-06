@@ -1,3 +1,4 @@
+import { ToastContainer } from 'react-toastify';
 import './App.css';
 import AddTransaction from './components/AddTransaction';
 import Balance from './components/Balance';
@@ -16,6 +17,7 @@ function App() {
         <IncomeExpenses/>
         <TransactionList/>
         <AddTransaction/>
+        <ToastContainer/>
       </div>
       </GlobalProvider>
 
