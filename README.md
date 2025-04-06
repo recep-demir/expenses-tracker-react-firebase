@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# 💰 Expenses Tracker (React + Firebase)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple and modern Expenses Tracker app built with React and `react-toastify` for notifications. Users can track income and expenses and get a clear balance overview. Data is stored in `localStorage`.
 
-## Available Scripts
+[Live Demo](https://movie-app-firebase0.netlify.app/)
+## Screenshots
 
-In the project directory, you can run:
+![App Screenshot](./public/movie.gif)
 
-### `yarn start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+##  Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-  Add and delete transactions  
+-  Real-time balance and summary  
+-  Toast notifications with `react-toastify`  
+-  Global state management using React Context API  
+-  Data persistence via `localStorage`  
+-  Responsive and clean UI  
 
-### `yarn test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##  Project Structure
 
-### `yarn build`
+```
+src/
+├── components/
+│   ├── AddTransaction.js
+│   ├── Balance.js
+│   ├── Header.js
+│   ├── IncomeExpense.js
+│   ├── Transaction.js
+│   └── TransactionList.js
+│
+├── context/
+│   └── GlobalContext.js
+│
+├── helpers/
+│   └── ToastNotify.js
+│
+├── App.css
+├── App.js
+└── index.js
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##  Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- React 19
+- React Context API
+- React Toastify
+- LocalStorage
 
-### `yarn eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📦 Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/expenses-tracker-react-firebase.git
+cd expenses-tracker-react-firebase
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# 2. Install dependencies
+npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# 3. Run the app
+npm start
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🛠 Available Scripts
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm start       # Runs the app in development mode
+npm run build   # Builds the app for production
+npm test        # Launches the test runner
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+##  Firebase Authentication (Coming Soon)
 
-### Analyzing the Bundle Size
+In the next phase of development, Firebase Authentication will be integrated to support:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+-  **User registration**
+-  **User login/logout**
+-  Secure data storage per user
 
-### Making a Progressive Web App
+This will enable users to track their expenses across devices securely.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 📝 Notes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- This project uses `localStorage` for storing transaction data.
+- You can optionally integrate Firebase for online storage and sync.
+- Toast messages are managed with `react-toastify` and can be customized in `helpers/ToastNotify.js`.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📸 Screenshots
 
-### `yarn build` fails to minify
+_Add screenshots of your application here._
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
