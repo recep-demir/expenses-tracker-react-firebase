@@ -9,7 +9,6 @@ import { GlobalContext } from './context/GlobalContext';
 
 function App() {
   return (
-    <div>
       <GlobalContext>
       <Header/>
       <div className="container">
@@ -20,7 +19,7 @@ function App() {
       </div>
       </GlobalContext>
 
-    </div>
+   
   );
 }
 
