@@ -4,15 +4,24 @@ import Transaction from './Transaction'
 
 const TransactionList = () => {
   const {transactions} = useContext(GlobalContext)
+  const [isVisible, setIsVisible] = React.useState(false)
 
   
   return (
     <div>
-      <h3>History</h3>
-      <ul id="list" className="list">
+      <div>
+      <h3>History</h3> 
+      <button onClick={()=>setIsVisible(!isVisible)}>{isVisible ? "Hide History" : "Show History"}</button> 
+
+      </div>
+         
+          
+          {isVisible && ( <ul id="list" className="list">
         {transactions.map(transaction => (<Transaction key = {transaction.id} transaction={transaction}/>) )}
         
-      </ul>
+      </ul>)}
+      
+
     </div>
   )
 }
