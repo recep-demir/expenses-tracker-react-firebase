@@ -1,11 +1,11 @@
-# 💰 Expenses Tracker (React + Firebase)
+# Expenses Tracker (React + Firebase)
 
 A simple and modern Expenses Tracker app built with React and `react-toastify` for notifications. Users can track income and expenses and get a clear balance overview. Data is stored in `localStorage`.
 
 [Live Demo](https://movie-app-firebase0.netlify.app/)
 ## Screenshots
 
-![App Screenshot](./public/movie.gif)
+![App Screenshot](./public/expenses_tracker.gif)
 
 ---
 
@@ -54,7 +54,7 @@ src/
 
 ---
 
-## 📦 Installation
+##  Installation
 
 ```bash
 # 1. Clone the repository
@@ -92,7 +92,7 @@ This will enable users to track their expenses across devices securely.
 
 ---
 
-## 📝 Notes
+##  Notes
 
 - This project uses `localStorage` for storing transaction data.
 - You can optionally integrate Firebase for online storage and sync.
@@ -100,7 +100,13 @@ This will enable users to track their expenses across devices securely.
 
 ---
 
-## 📄 License
+##  Screenshots
+
+![](./public/image.png)
+
+---
+
+##  License
 
 This project is licensed under the MIT License.
 
