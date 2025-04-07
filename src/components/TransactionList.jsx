@@ -10,8 +10,7 @@ const TransactionList = () => {
   return (
     <div>
       <div>
-      <h3>History</h3> 
-      <button onClick={()=>setIsVisible(!isVisible)}>{isVisible ? "Hide History" : "Show History"}</button> 
+        <h3>History</h3> <button style={{backgroundColor:"#9C88FF", border:"none", padding:"5px", color:"white" }} onClick={()=>setIsVisible(!isVisible)}>{isVisible ? "Hide History" : "Show History"}</button> 
 
       </div>
          
