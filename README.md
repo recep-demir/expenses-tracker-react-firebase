@@ -2,7 +2,7 @@
 
 A simple and modern Expenses Tracker app built with React and `react-toastify` for notifications. Users can track income and expenses and get a clear balance overview. Data is stored in `localStorage`.
 
-[Live Demo](https://movie-app-firebase0.netlify.app/)
+[Live Demo](https://expenses-tracker11.netlify.app/)
 ## Screenshots
 
 ![App Screenshot](./public/expenses_tracker.gif)
