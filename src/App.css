@@ -122,6 +122,40 @@ input:focus {
   max-height: 250px;
   overflow-y: auto;
 }
+/* Yardımcı Metin Tasarımı */
+.input-helper {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5); /* Hafif sönük renk */
+  line-height: 1.4;
+  font-style: italic;
+}
+
+.input-helper strong {
+  color: var(--accent); /* Önemli kısımları vurgula */
+  font-weight: 600;
+}
+
+.info-icon {
+  margin-right: 4px;
+  font-style: normal;
+}
+
+/* Input odaklandığında notun biraz parlaması için (opsiyonel) */
+input:focus + .input-helper {
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.3s ease;
+}
+
+/* Form içindeki başlıklar için küçük bir dokunuş */
+.form-control label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
 
 /* Scrollbar tasarımı */
 .list::-webkit-scrollbar { width: 6px; }
